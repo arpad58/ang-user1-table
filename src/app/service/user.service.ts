@@ -8,7 +8,7 @@ import { User } from '../model/user';
 })
 export class UserService {
 
-  /* table */
+  /* table */ /* endpoint máshol apiUrl volt megadva */
   endpoint: string = 'http://localhost:3000/users';
 
   constructor(
