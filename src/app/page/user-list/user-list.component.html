@@ -1,10 +1,12 @@
 <p>user-list works!</p>
+<!-- table -->
 <div class="container">
   <div class="row">
     <div class="col-12">
       <table class="table">
         <thead>
           <tr>
+            <!-- table -->
             <th>#</th>
             <th>Name</th>
             <th>Email</th>
@@ -13,7 +15,9 @@
           </tr>
         </thead>
         <tbody>
+          <!-- table -->          <!-- table -->
           <tr *ngFor="let user of users$ | async">
+            <!-- table -->
             <td>{{ user.id }}</td>
             <td>{{ user.name }}</td>
             <td>{{ user.email }}</td>

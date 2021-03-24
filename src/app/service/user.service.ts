@@ -8,12 +8,14 @@ import { User } from '../model/user';
 })
 export class UserService {
 
+  /* table */
   endpoint: string = 'http://localhost:3000/users';
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient     /* table */
   ) { }
 
+  /* table */
   getAll(): Observable<User[]> {
     return this.http.get<User[]>(`${this.endpoint}`);
   }

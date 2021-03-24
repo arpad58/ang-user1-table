@@ -10,11 +10,12 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class UserListComponent implements OnInit {
 
+  /* table */
   users$: Observable<User[]> = this.userService.getAll();
 
 
   constructor(
-    private userService: UserService,
+    private userService: UserService,    /* table */
   ) { }
 
   ngOnInit(): void {
