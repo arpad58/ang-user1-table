@@ -8,8 +8,8 @@ import { User } from '../model/user';
 })
 export class UserService {
 
-  /* table */ /* endpoint máshol apiUrl volt megadva */
-  endpoint: string = 'http://localhost:3000/users';
+  /* table */ /* serverAddress  endpoint máshol apiUrl volt megadva */
+  serverAddress: string = 'http://localhost:3000/users';
 
   constructor(
     private http: HttpClient     /* table */
@@ -17,6 +17,6 @@ export class UserService {
 
   /* table */
   getAll(): Observable<User[]> {
-    return this.http.get<User[]>(`${this.endpoint}`);
+    return this.http.get<User[]>(`${this.serverAddress}`);
   }
 }
